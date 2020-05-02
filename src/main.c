@@ -1,2 +1,7 @@
 #include <stdio.h>
-printf("Hello ESPL");
+
+int main()
+{
+    printf("Hello ESPL\n");
+    return 0;
+}
