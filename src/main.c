@@ -1,12 +1,19 @@
 int main()
 {
-   	char x = 'y', result;
-	int val;
-	while(x == 'y')
-		{ 
-			scanf("Please enter a number %d \n", &val);
-			result = num_to_words(val);
-			printf("%c", result);
-			scanf("Would you like to continue (y/n) : %c", x);
-		}
+   	char x;
+	int val ;
+	
+	do { 
+			printf("Please enter a positive number  : \n");	
+			scanf("%d", &val);
+
+			char *result = num_to_words(val);
+			printf("%s\n", result);
+
+			printf("Would you like to continue (y/n) : ");
+			scanf(" %c", &x);
+
+		} while(x == 'y' || x=='Y');
+			
+	return 0;
 }
