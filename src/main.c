@@ -1,7 +1,19 @@
-#include <stdio.h>
-
 int main()
 {
-    printf("Hello ESPL\n");
-    return 0;
+   	char x;
+	int val ;
+	
+	do { 
+			printf("Please enter a positive number  : \n");	
+			scanf("%d", &val);
+
+			char *result = num_to_words(val);
+			printf("%s\n", result);
+
+			printf("Would you like to continue (y/n) : ");
+			scanf(" %c", &x);
+
+		} while(x == 'y' || x=='Y');
+			
+	return 0;
 }
