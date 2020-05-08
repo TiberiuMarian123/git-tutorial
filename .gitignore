@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-doc/html
-doc/latex
->>>>>>> conflicts
 bin
 build
+doc/html
+doc/latex
