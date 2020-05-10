@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include "espl_lib.h"
+
 int main()
 {
    	char x;
