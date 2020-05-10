@@ -185,7 +185,6 @@ int main(int argc, char **argv) {
          arguments.verbose ? "yes" : "no", arguments.tick);
 
   /** Initialize state machine */
-//<<<<<<< HEAD  
 
   states_add(state_probe, NULL, state_three_run, NULL, state_third_e,
              THIRD_STATE_NAME);
@@ -193,15 +192,6 @@ int main(int argc, char **argv) {
              state_second_e, SECOND_STATE_NAME);
   states_add(state_probe, NULL, state_one_run, NULL, state_first_e,
              FIRST_STATE_NAME);
-  
-//=======
-//  states_add(timer_callback, NULL, state_one_run, NULL, state_first_x,
-//             FIRST_STATE_NAME);
-// states_add(state_probe, state_two_enter, state_two_run, state_two_exit,
-//             state_second_e, SECOND_STATE_NAME);
-//  states_add(state_probe, NULL, state_three_run, NULL, state_third_e,
-//             THIRD_STATE_NAME);
-//>>>>>>> unknown_features
 
   states_set_callback(statemachine_callback);
 
@@ -231,4 +221,3 @@ int main(int argc, char **argv) {
 
   return -1;
 }
->>>>>>> conflicts
